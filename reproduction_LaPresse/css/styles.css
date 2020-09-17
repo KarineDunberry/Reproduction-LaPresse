@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body
+{
+    --largeurContenu: 1050px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    position: relative;
+    min-width: var(--largeurContenu);  
+}
+
+
+nav
+{
+    background-color: #232325;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.containerMenu
+{
+    display: flex;
+    justify-content: space-around;
+    margin: 0px auto;
+    width: var(--largeurContenu);
+}
+
+.containerMenu > a
+{
+    color: #e3e3e5;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    padding: 15px 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.ongletHome:hover, .ongletPoints:hover, .ongletBonhomme:hover
+{
+    background-color: #525151;
+}
+
+.ongletActualites:hover, .ongletInternational:hover
+{
+    background-color: #838282;
+}
+
+.ongletDebats:hover
+{
+    background-color: #3f3f3f;
+}
+
+.ongletAffaires:hover
+{
+    background-color: #2777b9;
+}
+
+.ongletSports:hover
+{
+    background-color: #f3af2f;
+}
+
+.ongletAuto:hover
+{
+    background-color: #587481;
+}
+
+.ongletArts:hover
+{
+    background-color: #1ba7b9;
+}
+
+.ongletCinema:hover
+{
+    background-color: #946596;
+}
+
+.ongletSociete:hover, .ongletGourmand:hover
+{
+    background-color: #7a2a3e;
+}
+
+.ongletVoyage:hover
+{
+    background-color: #f15f25;
+}
+
+.ongletMaison:hover
+{
+    background-color: #5ca37c;
+}
+
+.containerContenu
+{
+    left: 50%;
+    position: absolute;
+    top: 100px;
+    width: var(--largeurContenu);
+    transform: translateX(-50%);
+    z-index: 6;
+   
+}
+
+main, aside
+{
+    padding: 0px 20px;
+}
+
+#cinema, #maison, #societe
+{
+    border-bottom: 1px solid lightgray;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+
+
+.titreCouleur
+{
+    padding: 5px 10px;
+}
+
+.titreCouleur a
+{
+    color: white;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.titreCinema
+{
+    background-color:#98599F;
+}
+
+.titreCinema:hover
+{
+    background-color:#77457c;
+}
+
+.titreMaison
+{
+    background-color: #699772;
+}
+
+.titreMaison:hover
+{
+    background-color: #527559;
+}
+
+.titreSociete
+{
+    background-color: #840133;
+}
+
+.titreSociete:hover
+{
+    background-color: #5c0124;
+}
+
+.titreArticle
+{
+    padding: 0px;
+}
+
+.titreArticle  img
+{
+    width: 100%;
+}
+
+.titreArticle:hover img
+{
+    opacity: 0.3;
+}
+
+#cinema > .titreArticle:hover p
+{
+    color: #98599F;
+}
+
+#maison > .titreArticle:hover p
+{
+    color: #699772;
+}
+
+#societe > .titreArticle:hover p
+{
+    color: #840133;
+}
+
+.titreArticle h1:hover
+{
+    color: grey;
+}
+
+.titreArticle.colonne-2
+{
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+}
+
+.titreArticle.colonne-2 span
+{
+    font-style: italic;
+}
+
+.titreArticle p
+{
+    color: black;
+    padding: 0px 10px 20px;
+    height: 50px;
+}
+
+h1
+{
+    color: #6C6368;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: -0.5px;
+    padding: 0px 10px 0px;
+    text-transform: uppercase;
+}
+
+.colonne-droite p
+{
+    padding: 5px 10px 0px;
+}
+
+#titreNousJoindre
+{
+    margin-top: 100px;
+    background-color: #333333;
+    color: white;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+    text-transform: uppercase;
+}
+
+#texteNousJoindre
+{
+    background-color: black;
+    font-size: 13px;
+    padding: 5px 10px;
+}
+
+#texteNousJoindre span
+{
+    font-weight: bold;
+}
+
+#texteNousJoindre a
+{
+    color: white;
+}
+
+#texteNousJoindre a:hover
+{
+    color: gray;
+}
+
+.blocTeteDaffiche
+{
+    border-bottom: 1px solid lightgray;
+    padding: 20px 0px;
+    position: relative;
+}
+
+.blocTeteDaffiche:hover
+{
+    border-bottom: 1px solid #2777b9;
+}
+
+.blocTeteDaffiche:hover .texteTeteDaffiche
+{
+    color: #2777b9;
+}
+
+.blocTeteDaffiche:hover img
+{
+    opacity: 0.3;
+}
+
+#titreTeteDaffiche
+{
+    border-bottom: 2px solid black;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 50px;
+    padding: 5px 10px 15px 0px;
+    text-transform: uppercase;
+}
+
+.texteTeteDaffiche
+{
+    color: black;
+    left: 35%;
+    position: absolute;
+    top: 25%;
+    z-index: 5;
+  
+}
+
+#teteDaffiche img
+{
+    width: 30%;
+}
+
+#pub
+{
+    margin-top: 50px;
+}
+
+#pub > img
+{
+    width: 100%;
+}
+
+
